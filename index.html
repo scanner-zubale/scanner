@@ -359,6 +359,8 @@
           }
 
           mostrarScanner(dados);
+          document.getElementById("contadorHoje").textContent =
+  "Pedidos bipados hoje: " + (dados.totalHoje || 0);
           resolve(dados);
         };
 
